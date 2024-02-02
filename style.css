@@ -45,6 +45,10 @@ span {
     text-shadow:rgb(191, 204, 191) 0 3px 2px;
 }
 
+#nav-links button:focus {
+    text-decoration: underline solid darkgreen;
+}
+
 #navbar {
     padding: 25px;
     display: flex;

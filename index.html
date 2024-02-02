@@ -25,58 +25,97 @@
    <div id="landing-page" style="display: block;">
 
         <div class="flex-container">
-            <div id="image">
-                <img src="/">
-                Image Placeholder
-            </div>
+            <div id="greeting">
+                <p>Hello</p>
+                <h1>I'm a <span id="software-engineer">Software Engineer</span></h1>
+            </div>        
 
-            <p id="quote">"I didnt come this far to only come this far." <br>- Tom Brady</p>
+            <div id="quote-container">
+                <p id="quote">"I didnt come this far to only come this far." <br>- Tom Brady</p>
+            </div>
         </div>
     </div>
 
     <div id="bio-page" style="display: none;">
         <h1>About Me</h1>
 
-        <h4>My Interests</h4>
-        <ul>
-            <li>Art</li>
-            <li>Photography</li>
-            <li>Design</li>
-            <li>Coding</li>
-        </ul>
+
+        <div class="flex" id="bio-flex">
+                <div id="about">
+                    <p>I've dabbled in a lot of different fields, so some of my interests are art and design. 
+                        I was in the Fine Arts Academy at my high school, where I learned a variety of skills from
+                        Photography and Painting, to Graphic Design and Drawing with different mediums. One of my
+                        first projects when learning App Development was my art portfolio, because I wanted a
+                        customized page that really suited me beyond Blogger or Wix templates. Feel free to check
+                        it out! <br><br>I also help out with my family's business, <a href="https://linktr.ee/chuckstewartphotography" target="_blank">Chuck Stewart Photography</a> , whether it be 
+                        photo editing, handling email communications, or content curation. My grandfather was a
+                        photographer from the 40s to late 90s, and captured some of the greatest Jazz and Blues legends
+                        from that time period.
+                    </p>
+                </div>
+
+            <div id="art">
+                <a href="https://tanxtdr.com" target="_blank"><p id="art-portfolio">My Art Portfolio</p></a>
+                <img src="images/self.jpg" alt="self-portrait">
+            </div>
+        </div>
 
     </div>
 
     <div id="experience-page" style="display: none;">
         <h1>My Experience</h1>
 
-        <div id="flex">
-        <div id="background">
-            <p>I'm currently a Software Engineering Apprentice with a range of experience. 
-                I initially started with UX Design in 2021 with a 6-month course from eCornell. 
-                Here I learned all the essentials of User Experience Design, from ideation to prototyping.
-                I wanted to be able to actually build my designs out, so from there, I branched off to 
-                the more technical side, learning JavaScript, HTML, CSS, MYSQL, and more. I'm passionate
-                about the development cycle from both sides, and contributing my knowledge to meaningful projects.
-            </p>
-        </div>
+        <div class="flex">
+            <div id="background">
+                <p>I'm currently a Software Engineering Apprentice with a range of experience. 
+                    I initially started with UX Design in 2021 with a 6-month course from eCornell. 
+                    Here I learned all the essentials of User Experience Design, from ideation to prototyping.
+                    I wanted to be able to actually build my designs out, so from there, I branched off to 
+                    the more technical side, learning <u>JavaScript</u>, <u>HTML</u>, <u>CSS</u>, <u>SQL</u>, <u>Node.js</u>, 
+                    and more. I'm passionate about the development cycle from both sides, and contributing my knowledge 
+                    to meaningful projects.
+                </p>
+            </div>
 
-        <div id="timeline">
-            <h5>Georgia State University | <span class="dates">Aug 2020 - Dec 2022</span></h5>
-              <p>Business Administration</p>  
-            <h5>eCornell | <span class="dates">Aug 2021 - Jan 2022</span></h5>
-                <p>User Experience Design</p>
-            <h5>Year Up | <span class="dates">Feb 2023 - Feb 2024</span></h5>
-                <p>Application Development</p>
-            <h5>Multiverse | <span class="dates">Jan 2024 - Present</span></h5>
-                <p>Software Engineering</p>
+            <div id="timeline">
+                <h5>McKinsey & Company | <span class="dates">Jan 2024 - Present</span></h5>
+                    <p>Software Engineering</p><hr>
+                <h5>Year Up | <span class="dates">Feb 2023 - Feb 2024</span></h5>
+                    <p>Application Development</p><hr>
+                <h5>eCornell | <span class="dates">Aug 2021 - Jan 2022</span></h5>
+                    <p>User Experience Design</p><hr>
+                <h5>Georgia State University | <span class="dates">Aug 2020 - Dec 2022</span></h5>
+                    <p>Business Administration</p>  
+            </div>
         </div>
-    </div>
     </div>
 
     <div id="portfolio-page" style="display: none;">
         <h1>My Projects</h1>
-    </div>
+
+        <div id="grid-container">
+            <div class="grid-item">
+                <a href="/">Project 1</a>
+                <p>Description</p><hr>
+                <img src="/" alt="screenshot">
+            </div>
+            <div class="grid-item">
+                <a href="/">Project 2</a>
+                <p>Description</p><hr>
+                <img src="/" alt="screenshot">
+            </div>
+            <div class="grid-item">
+                <a href="/">Project 3</a>
+                <p>Description</p><hr>
+                <img src="/" alt="screenshot">
+            </div>
+            <div class="grid-item">
+                <a href="/">Project 4</a>
+                <p>Description</p><hr>
+                <img src="/" alt="screenshot">
+            </div>
+        </div>
+    </div><br>
 
 
     <script src="script.js"></script>

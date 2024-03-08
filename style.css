@@ -1,0 +1,282 @@
+* {
+    /* border: red dashed 1px; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: whitesmoke;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+    overflow: auto;
+}
+
+hr {
+    background-color: rgb(191, 204, 191);
+    height: 1pt;
+    border: none;
+}
+
+#bio-page, #experience-page, #portfolio-page, #landing-page {
+    margin: 60px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+
+
+/* NAVIGATION STYLES */
+#home-btn{
+    text-decoration: none;
+    font-size: 20pt;
+    font-weight: 800;
+}
+
+span {
+    color:darkgreen;
+}
+
+#nav-links button{
+    font-weight: 600;
+}
+
+#nav-links button:hover {
+    text-shadow:rgb(191, 204, 191) 0 3px 2px;
+}
+
+#nav-links button:focus {
+    text-decoration: underline solid darkgreen;
+}
+
+#navbar {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar button {
+    border-style: none;
+    background: none;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* END OF NAVIGATION STYLES */
+
+
+/* LANDING PAGE STYLES */
+#landing-page {
+    margin: 5em;
+}
+
+.flex-container {
+    display: flex;
+    margin: 60px;
+    justify-content: space-between;
+    gap: 5em;
+}
+
+#greeting {
+    font-size: 20pt;
+}
+#greeting p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 25pt;
+    text-transform: uppercase;
+}
+
+#software-engineer {
+    color: black;
+    text-decoration: solid underline darkgreen;
+}
+
+#quote-container {
+    width: 45em;
+    align-self: center;
+    margin-top: 30px;
+}
+
+#quote {
+    background-color: white;
+    padding: 20px;
+    border: black solid;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 20pt;
+    box-shadow: rgb(191, 204, 191) 15pt 15pt;
+    line-height: 2.5em;
+
+}
+/* END OF LANDING PAGE STYLES */
+
+/* BIO PAGE STYLES */
+#bio-page h1 {
+    margin-bottom: 0;
+}
+
+#bio-flex {
+    margin-top: 10px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#about {
+    margin-top: 10px;
+    max-width: 50em;
+    border: black solid;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: rgb(191, 204, 191) 10pt 10pt;
+    text-transform: uppercase;
+    font-size: 11.5pt;
+    line-height: 2;
+    background-color: white;
+    font-weight: 400;
+}
+
+#about a {
+    font-weight: bold;
+    color: darkgreen;
+}
+
+#art img {
+    max-height: 23em;
+    border-radius: 10px;
+    border: solid black;
+}
+
+#art-portfolio {
+    margin: 0;
+    color: darkgreen;
+    margin-bottom: 7px;
+    font-weight: 300;
+}
+
+#art a {
+    font-size: 15pt;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+#art a:hover {
+    text-shadow:rgb(191, 204, 191) 0 3px 2px;
+}
+
+/* END OF BIO PAGE STYLES */
+
+
+/* EXPERIENCE PAGE */
+.flex {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+
+#background {
+    max-width: 42vw;
+    font-weight: 400;
+    line-height: 2;
+    background-color: white;
+    border: black solid;
+    border-radius: 8px;
+    padding: 25px;
+    margin-right: 5em;
+    margin-top: 20px;
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 12pt;
+    box-shadow: rgb(191, 204, 191) 10pt 10pt;
+}
+
+#background u {
+    text-decoration: darkgreen solid underline;
+}
+
+
+#timeline {
+    text-transform: uppercase;
+    border-left: dashed rgb(191, 204, 191) 1pt;
+    padding-left: 3em;
+    margin-left: 25px;
+    text-align: center;
+}
+
+#timeline h5 {
+    margin: 7pt;
+    font-size: 11pt;
+}
+
+#timeline p {
+    font-size: 10pt;
+}
+
+#timeline hr {
+    background-color: darkgreen;
+    width: 15em;
+}
+
+.dates {
+    font-weight: 300;
+    color: black;
+}
+/* END OF EXPERIENCE PAGE */
+
+
+
+/* PORTFOLIO PAGE */
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    justify-content: center;
+    overflow-y: scroll;
+    height: 55vh;
+    padding: 25px;
+}
+
+.grid-item{
+    border: black solid;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 35em;
+    height: 25em;
+    padding: 15px;
+    box-shadow: rgb(191, 204, 191) 8pt 8pt;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 17pt;
+}
+
+.grid-item a:hover {
+    text-decoration: underline solid rgb(191, 204, 191);
+}
+
+.grid-item p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    /* text-transform: uppercase; */
+}
+
+.grid-item hr {
+    background-color: darkgreen;
+    height: 1pt;
+}
+
+#img-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+#img-container img {
+    max-height: 15em;
+}
+

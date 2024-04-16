@@ -1,14 +1,14 @@
-* {
-    /* border: red dashed 1px; */
+/* * {
+    border: red dashed 1px;
     box-sizing: border-box;
-}
+} */
 
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: whitesmoke;
     /* overflow-y: scroll;
     overflow-x: hidden; */
-    overflow: auto;
+    overflow: hidden;
 }
 
 hr {
@@ -24,6 +24,7 @@ hr {
 h1 {
     text-transform: uppercase;
     font-weight: lighter;
+    font-size: 35pt;
 }
 
 
@@ -31,7 +32,7 @@ h1 {
 /* NAVIGATION STYLES */
 #home-btn{
     text-decoration: none;
-    font-size: 20pt;
+    font-size: 25pt;
     font-weight: 800;
 }
 
@@ -41,6 +42,7 @@ span {
 
 #nav-links button{
     font-weight: 600;
+    font-size: 13pt;
 }
 
 #nav-links button:hover {
@@ -70,23 +72,31 @@ span {
 /* LANDING PAGE STYLES */
 #landing-page {
     margin: 5em;
+    height: 65vh;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .flex-container {
     display: flex;
+    align-items: center;
+    height: 55vh;
     margin: 60px;
     justify-content: space-between;
     gap: 5em;
 }
 
-#greeting {
-    font-size: 20pt;
-}
 #greeting p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 300;
-    font-size: 25pt;
+    font-size: 40pt;
     text-transform: uppercase;
+}
+
+#greeting h1 {
+    font-size: 55pt;
 }
 
 #software-engineer {
@@ -95,7 +105,7 @@ span {
 }
 
 #quote-container {
-    width: 45em;
+    width: 40em;
     align-self: center;
     margin-top: 30px;
 }
@@ -103,10 +113,11 @@ span {
 #quote {
     background-color: white;
     padding: 20px;
+    height: 7em;
     border: black solid;
     border-radius: 5px;
     text-align: right;
-    font-size: 20pt;
+    font-size: 25pt;
     box-shadow: rgb(191, 204, 191) 15pt 15pt;
     line-height: 2.5em;
 
@@ -114,8 +125,8 @@ span {
 /* END OF LANDING PAGE STYLES */
 
 /* BIO PAGE STYLES */
-#bio-page h1 {
-    margin-bottom: 0;
+#bio-page {
+    height: 65vh;
 }
 
 #bio-flex {
@@ -126,16 +137,16 @@ span {
 
 #about {
     margin-top: 10px;
-    max-width: 50em;
+    max-width: 45em;
+    height: 50vh;
     border: black solid;
     border-radius: 5px;
-    padding: 20px;
+    padding: 25px;
     box-shadow: rgb(191, 204, 191) 10pt 10pt;
-    text-transform: uppercase;
-    font-size: 11.5pt;
+    font-size: 15pt;
     line-height: 2;
     background-color: white;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 #about a {
@@ -144,7 +155,7 @@ span {
 }
 
 #art img {
-    max-height: 23em;
+    height: 28em;
     border-radius: 10px;
     border: solid black;
 }
@@ -172,6 +183,10 @@ span {
 
 
 /* EXPERIENCE PAGE */
+#experience-page {
+    height: 65vh;
+}
+
 .flex {
     display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -179,8 +194,9 @@ span {
 }
 
 #background {
-    max-width: 42vw;
-    font-weight: 400;
+    width: 55vw;
+    height: 55vh;
+    font-weight: 300;
     line-height: 2;
     background-color: white;
     border: black solid;
@@ -189,8 +205,10 @@ span {
     margin-right: 5em;
     margin-top: 20px;
     align-self: center;
-    text-transform: uppercase;
-    font-size: 12pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14pt;
     box-shadow: rgb(191, 204, 191) 10pt 10pt;
 }
 
@@ -209,16 +227,17 @@ span {
 
 #timeline h5 {
     margin: 7pt;
-    font-size: 11pt;
+    font-size: 13pt;
 }
 
 #timeline p {
-    font-size: 10pt;
+    font-size: 12pt;
 }
 
 #timeline hr {
     background-color: darkgreen;
-    width: 15em;
+    width: 17em;
+    height: 1.5pt;
 }
 
 .dates {
@@ -231,12 +250,12 @@ span {
 
 /* PORTFOLIO PAGE */
 #grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 2em;
-    justify-content: center;
+    justify-content: space-between;
     overflow-y: scroll;
-    height: 55vh;
+    height: 65vh;
     padding: 25px;
 }
 
@@ -244,12 +263,18 @@ span {
     border: black solid;
     background-color: white;
     border-radius: 10px;
-    max-width: 35em;
-    height: 25em;
+    width: 38em;
+    height: 27em;
     padding: 15px;
     box-shadow: rgb(191, 204, 191) 8pt 8pt;
 }
-
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+ .thumbnail {
+    max-height: 35px;
+ }
 .grid-item a {
     text-decoration: none;
     color: black;
@@ -263,6 +288,7 @@ span {
 .grid-item p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14pt;
+    height: 50px;
     /* text-transform: uppercase; */
 }
 
@@ -274,9 +300,10 @@ span {
 #img-container {
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    height: 16.5em;
+    overflow-y: scroll;
 }
 #img-container img {
-    max-height: 15em;
+    height: 16em;
 }
 

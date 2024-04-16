@@ -138,12 +138,15 @@ span {
 #about {
     margin-top: 10px;
     max-width: 45em;
-    height: 50vh;
+    max-height: 50vh;
     border: black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 5px;
     padding: 25px;
     box-shadow: rgb(191, 204, 191) 10pt 10pt;
-    font-size: 15pt;
+    font-size: 13pt;
     line-height: 2;
     background-color: white;
     font-weight: 500;
@@ -195,6 +198,7 @@ span {
 
 #background {
     width: 55vw;
+    overflow-y: auto;
     height: 55vh;
     font-weight: 300;
     line-height: 2;
@@ -208,7 +212,7 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 14pt;
+    font-size: 13pt;
     box-shadow: rgb(191, 204, 191) 10pt 10pt;
 }
 

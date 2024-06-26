@@ -1,7 +1,7 @@
-/* * {
-    border: red dashed 1px;
+* {
+    /* border: red dashed 1px; */
     box-sizing: border-box;
-} */
+}
 
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -68,6 +68,29 @@ span {
 }
 /* END OF NAVIGATION STYLES */
 
+/* Navigation Media Queries */
+@media screen and (max-width: 1080px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #home-btn {
+        padding: 0;
+    }
+    #home-btn span {
+        font-size: 24pt;
+    }
+
+   #nav-links {
+        margin-top: 20px;
+    }
+    #nav-links button {
+        font-size: 12pt;
+        color: rgb(102, 102, 102);
+        font-weight: lighter;
+    }
+}
 
 /* LANDING PAGE STYLES */
 #landing-page {
@@ -123,6 +146,48 @@ span {
 
 }
 /* END OF LANDING PAGE STYLES */
+
+/* Landing Page Media Queries */
+@media screen and (max-width: 1080px) {
+    #landing-page {
+        margin: 0;
+        height: 90vh;
+    }
+    #greeting {
+        margin: 2em 0 0 0;
+        width: 100%;
+    }
+    #greeting p {
+        margin: 0;
+        font-size: 30pt;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    #landing-page h1 {
+        font-size: 40pt;
+        text-align: center;
+    }
+    #landing-page p {
+        text-align: center;
+        font-weight: lighter;
+    }
+    #quote-container {
+        width: 100%;
+        margin: 0;
+    }
+    #quote {
+        font-size: 14pt;
+        padding: 0;
+        overflow-y: scroll;
+        height: fit-content;
+        box-shadow: none;
+        border: none;
+        background-color: transparent;
+    }
+}
+
 
 /* BIO PAGE STYLES */
 #bio-page {
@@ -183,6 +248,52 @@ span {
 }
 
 /* END OF BIO PAGE STYLES */
+
+/* Bio Page Media Queries */
+@media screen and (max-width: 1080px) {
+    #bio-page {
+        /* overflow-y: scroll;     */
+        margin: 0;
+        height: 90vh;
+    }
+    #bio-flex {
+        margin-top: 0;
+    }
+    #bio-page h1 {
+        font-size: 23pt;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 1em;
+    }
+    #about {
+        background-color: whitesmoke;
+        box-shadow: none;
+        border: none;
+        height: 16em;
+        margin: 0 0 0.5em 0;
+        padding: 5px 1em;
+    }
+    #about p {
+        overflow-y: scroll;
+        width: 100%;
+        font-size: 12pt;
+        text-align: center;
+        padding: 5px 1em;
+    }
+    #art {
+        border-top: dashed rgb(191, 204, 191) 1pt;
+        padding-top: 1em;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        overflow-y: scroll;
+        height: 20em;
+    }
+    #art img {
+        max-width: 20em;
+        justify-content: center;
+    }
+}
 
 
 /* EXPERIENCE PAGE */
@@ -250,6 +361,66 @@ span {
 }
 /* END OF EXPERIENCE PAGE */
 
+/* Experience Page Media Queries */
+@media screen and (max-width: 1080px) {
+    #experience-page h1 {
+        font-size: 23pt;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 1em;
+    }
+    #experience-page {
+        margin: 0;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #background {
+        display: flex;
+        justify-content: center;
+        margin-left: 5em;
+        width: 100%;
+        text-align: center;
+        height: 16em;
+        box-shadow: none;
+        background-color: whitesmoke;
+        border: none;
+        margin: 0;
+    }
+    #background p {
+        font-size: 12pt;
+        width: 100%;
+        height: 15em;
+        overflow-y: scroll;
+    }
+
+    #timeline {
+        padding: 1em 0 0 0;
+        margin: 0;
+        height: 35vh;  
+        overflow-y: scroll;
+        border-left: none;
+        border-top: dashed rgb(191, 204, 191) 1pt;
+    }
+    #timeline h5 {
+        font-size: 10pt;
+    }
+    #timeline p {
+        font-size: 9pt;
+    }
+    #timeline hr {
+        width: 10em;
+    }
+    .dates {
+        font-size: 10pt;
+    }
+    
+}
 
 
 /* PORTFOLIO PAGE */
@@ -317,4 +488,54 @@ span {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14pt;
 }
+
+/* Portfolio Page Media Queries */
+@media screen and (max-width: 1080px) {
+    #portfolio-page {
+        margin: 0;
+    }
+    #portfolio-page h1 {
+        font-size: 23pt;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 1em;
+    }
+
+    #grid-container {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        padding: 0 1.5em;
+        margin: 1em 0 0 0;
+    }
+    
+    .grid-item {
+        width: 100%;
+        height: 19em;
+        box-shadow: none;
+    }
+
+    #img-container {
+        width: 100%;
+        height: 10em;
+    }
+
+    #img-container img {
+        height: 100%;
+    }
+    .stack {
+        text-align: right;
+    }
+    .thumbnail {
+        height: 17px;
+    }
+    .grid-item a {
+        font-size: 11pt;
+    }
+    p.project-description {
+        font-size: 10pt;
+    }
+    
+}
+
 

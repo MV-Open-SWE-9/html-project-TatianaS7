@@ -77,16 +77,17 @@ span {
     }
     #home-btn {
         padding: 0;
+        font-size: 30pt;
     }
     #home-btn span {
-        font-size: 24pt;
+        font-size: 28pt;
     }
 
    #nav-links {
         margin-top: 20px;
     }
     #nav-links button {
-        font-size: 12pt;
+        font-size: 20pt;
         color: rgb(102, 102, 102);
         font-weight: lighter;
     }
@@ -254,7 +255,7 @@ span {
     #bio-page {
         /* overflow-y: scroll;     */
         margin: 0;
-        height: 90vh;
+        height: 60em;
     }
     #bio-flex {
         margin-top: 0;
@@ -276,7 +277,7 @@ span {
     #about p {
         overflow-y: scroll;
         width: 100%;
-        font-size: 12pt;
+        font-size: 20pt;
         text-align: center;
         padding: 5px 1em;
     }
@@ -393,10 +394,11 @@ span {
         margin: 0;
     }
     #background p {
-        font-size: 12pt;
+        font-size: 20pt;
         width: 100%;
         height: 15em;
         overflow-y: scroll;
+        padding: 0 1em;
     }
 
     #timeline {
@@ -510,7 +512,7 @@ span {
     }
     
     .grid-item {
-        width: 100%;
+        width: 30em;
         height: 19em;
         box-shadow: none;
     }
@@ -527,13 +529,13 @@ span {
         text-align: right;
     }
     .thumbnail {
-        height: 17px;
+        height: 19px;
     }
     .grid-item a {
-        font-size: 11pt;
+        font-size: 18pt;
     }
     p.project-description {
-        font-size: 10pt;
+        font-size: 18pt;
     }
     
 }

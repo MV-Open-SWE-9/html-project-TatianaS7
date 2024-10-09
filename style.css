@@ -264,9 +264,9 @@ span {
 /* Bio Page Media Queries */
 @media screen and (max-width: 1080px) {
     #bio-page {
-        /* overflow-y: scroll;     */
+        overflow-y: scroll;    
         margin: 0;
-        height: 60em;
+        height: 75vh;
     }
     #bio-flex {
         margin-top: 0;
@@ -299,11 +299,12 @@ span {
         width: 100%;
         display: grid;
         justify-content: center;
-        overflow-y: scroll;
-        height: 20em;
+        /* overflow-y: scroll;
+        height: 20em; */
     }
     #art img {
-        max-width: 20em;
+        /* max-width: 20em; */
+        height: 20em;
         justify-content: center;
     }
 }
@@ -389,7 +390,8 @@ span {
     }
     #experience-page {
         margin: 0;
-        height: 90vh;
+        height: 70vh;
+        /* overflow-y: scroll; */
         display: flex;
         justify-content: center;
     }
@@ -404,7 +406,7 @@ span {
         margin-left: 5em;
         width: 100%;
         text-align: center;
-        height: 14em;
+        height: 30vh;
         box-shadow: none;
         background-color: whitesmoke;
         border: none;
@@ -419,9 +421,9 @@ span {
     }
 
     #timeline {
-        padding: 1em 0 0 0;
+        padding: 2em 0;
         margin: 0;
-        height: 35vh;  
+        height: 40vh;  
         overflow-y: scroll;
         border-left: none;
         border-top: dashed rgb(191, 204, 191) 1pt;
@@ -536,18 +538,22 @@ span {
 
     #img-container {
         width: 100%;
-        max-height: 8em;
+        height: 17vh;
         overflow-y: scroll;
+        margin-bottom: 1em;
     }
 
     #img-container img {
-        height: 12em;
+        height: 10em;
     }
+
     .stack {
-        text-align: right;
+        display: flex;
+        justify-content: space-evenly;
+        height: 2em;
     }
     .thumbnail {
-        height: 19px;
+        height: 1.5em;
     }
     .grid-item a {
         font-size: 16pt;

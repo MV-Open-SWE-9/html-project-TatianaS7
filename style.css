@@ -468,6 +468,12 @@ span {
     display: flex;
     justify-content: space-between;
 }
+
+.stack {
+    display: flex;
+    justify-content: space-evenly;
+    height: 3em;
+}
  .thumbnail {
     max-height: 35px;
  }
@@ -489,9 +495,10 @@ span {
 #img-container {
     display: flex;
     justify-content: center;
-    height: 19.5em;
+    height: 17em;
     width: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
+    margin-bottom: 1em;
 }
 
 #img-container img {

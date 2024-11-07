@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tatiana's Webpage</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <header>
+        <div id="navbar">
+            <div id="home">
+                <button id="home-btn">Tatiana<span>Stewart</span></button>
+            </div>
+
+            <div id="nav-links">
+                <button type="button" id="bio">Bio</button>
+                <button type="button" id="experience">Experience</button>
+                <button type="button" id="portfolio">Portfolio</button>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <body>
+        <div id="landing-page" style="display: block;">
+
+            <div class="flex-container">
+                <div id="greeting">
+                    <p>Hello</p>
+                    <h1>I'm a <span id="software-engineer">Software<br /> Engineer</span></h1>
+                </div>
+
+                <div id="quote-container">
+                    <p id="quote">"I didnt come this far to only come this far." <br>- Tom Brady</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="bio-page" style="display: none;">
+            <h1>About Me</h1>
+
+
+            <div class="flex" id="bio-flex">
+                <div id="about">
+                    <p>I've dabbled in a lot of different fields, so some of my interests are art and design.
+                        I was in the Fine Arts Academy at my high school, where I learned a variety of skills from
+                        Photography and Painting, to Graphic Design and Drawing with different mediums. One of my
+                        first projects when learning App Development was my art portfolio, because I wanted a
+                        customized page that really suited me beyond Blogger or Wix templates. Feel free to check
+                        it out! <br><br>I also help out with my family's business, <a
+                            href="https://linktr.ee/chuckstewartphotography" target="_blank">Chuck Stewart
+                            Photography</a> , whether it be
+                        photo editing, handling email communications, or content curation. My grandfather was a
+                        photographer from the 40s to late 90s, and captured some of the greatest Jazz and Blues legends
+                        from that time period.
+                    </p>
+                </div>
+
+                <div id="art">
+                    <a href="https://tanxtdr.com" target="_blank">
+                        <p id="art-portfolio">My Art Portfolio</p>
+                    </a>
+                    <img src="images/self.jpg" alt="self-portrait">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="experience-page" style="display: none;">
+            <h1>My Experience</h1>
+
+            <div class="flex">
+                <div id="background">
+                    <p>Before I became a Software Engineer, I started with User Experience Design. In 2021, I took a
+                        6-month course
+                        through eCornell, where I learned all the essentials of UXD, from ideation to prototyping.
+                        Prior to knowing what UX Design was though, I had ideas for webistes and apps, but I was coming
+                        from
+                        a business background so I knew it wasnt feasible to start up all of these companies. What I
+                        ended up noticing was
+                        that I put a lot of focus on what the digital aspect would entail rather than the logistics as a
+                        business.
+                        This is what led me to look more into creative career paths, even considering product design. I
+                        knew I was good
+                        at planning out digital applications and I wanted to keep doing it. One day I came across a
+                        TikTok about being a UX Designer
+                        and it caught my eye, ultimately leading to me taking the course.<br /><br /> Once I finished my
+                        first passion project,
+                        I realized I wanted to be able to actually build it out, so I branched off to
+                        the more technical side, learning <u>JavaScript</u>, <u>HTML</u>, <u>CSS</u>, <u>SQL</u>,
+                        <u>Node.js</u>,
+                        etc. This journey has been extremely fulfilling for me, just being able to develop these skills
+                        and see how far I've come.
+                        It's so exciting to see how I can incorporate my creativity into technology, and I look forward
+                        to learning more and contributing
+                        my knowledge to meaningful projects.
+                    </p>
+                </div>
+
+                <div id="timeline">
+                    <h5>McKinsey & Company | <span class="dates">Jan 2024 - Present</span></h5>
+                    <p>Software Engineering</p><br />
+                    <hr><br />
+                    <h5>Year Up | <span class="dates">Feb 2023 - Jan 2024</span></h5>
+                    <p>Application Development</p><br />
+                    <hr><br />
+                    <h5>eCornell | <span class="dates">Aug 2021 - Jan 2022</span></h5>
+                    <p>User Experience Design</p><br />
+                    <hr><br />
+                    <h5>Georgia State University | <span class="dates">Aug 2020 - Dec 2022</span></h5>
+                    <p>Business Administration</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio-page" style="display: none;">
+            <h1>My Projects</h1>
+
+            <div id="grid-container">
+                <!-- TNP Arcade -->
+                <div class="grid-item">
+                    <div class="header">
+                        <a href="/" target="_blank">TNP Arcade - Group Project</a>
+                    </div>
+
+                    <p class="project-description">
+                        An online arcade that allows users to choose from 3 games: Fidget Popper, Quick Draw and Memory Game
+                    </p>
+                    <hr>
+                    <div id="img-container">
+                        <img src="./images/tnp-arcade.png" alt="chroma-screenshot">
+                    </div>
+                    <div class="stack">
+                        <img src="./images/stack-logos/nextjs.png" class="thumbnail" alt="nextjs">
+                        <img src="./images/stack-logos/tailwind.png" class="thumbnail" alt="tailwind">
+                    </div>
+                </div>
+                <!-- Pokeverse API -->
+                <div class="grid-item">
+                    <div class="header">
+                        <a href="https://github.com/TatianaS7/pokemon-api.git" target="_blank">Pokeverse API</a>
+                    </div>
+
+                    <p class="project-description">
+                        A frontend application that fetches data from the PokeAPI and displays it in a user-friendly interface.
+                    </p>
+                    <hr>
+                    <div id="img-container">
+                        <img src="./images/pokeverse-api.png" alt="pokeverse-screenshot">
+                    </div>
+                    <div class="stack">
+                        <img src="./images/stack-logos/React-icon.png" class="thumbnail" alt="react">
+                        <img src="/images/stack-logos/cypress.jpeg" class="thumbnail" alt="cypress">
+                    </div>
+                </div>                
+                <!-- Chroma -->
+                <div class="grid-item">
+                    <div class="header">
+                        <a href="https://chroma-client.onrender.com/" target="_blank">Chroma</a>
+                    </div>
+
+                    <p class="project-description">
+                        An image color picker and palette generator that allows users to save their palettes and colors.
+                    </p>
+                    <hr>
+                    <div id="img-container">
+                        <img src="./images/chroma-screenshot.png" alt="chroma-screenshot">
+                    </div>
+                    <div class="stack">
+                        <img src="./images/stack-logos/Python-logo.png" class="thumbnail" alt="python">
+                        <img src="./images/stack-logos/flask.png" class="thumbnail" alt="flask">
+                        <img src="./images/stack-logos/React-icon.png" class="thumbnail" alt="react">
+                        <img src="./images/stack-logos/sqlalchemy.png" class="thumbnail" alt="sqlalchemy">
+                        <img src="./images/stack-logos/auth0.png" class="thumbnail" alt="auth0">
+                    </div>
+                </div>
+                <!-- Password Manager -->
+                <div class="grid-item">
+                    <div class="header">
+                        <a href="https://passwordmanager-khal.onrender.com/" target="_blank">Password Manager</a>
+                    </div>
+
+                    <p class="project-description">
+                        Fullstack CRUD application that manages user password accounts,
+                        encrypts sensitive information before storing it in a database,
+                        and generates passwords for users.
+                    </p>
+                    <hr>
+                    <div id="img-container">
+                        <img src="./images/password-manager-screenshot.png" alt="screenshot">
+                    </div>
+                    <div class="stack">
+                        <img src="./images/stack-logos/Python-logo.png" class="thumbnail" alt="python">
+                        <img src="./images/stack-logos/flask.png" class="thumbnail" alt="flask">
+                        <img src="./images/stack-logos/React-icon.png" class="thumbnail" alt="react">
+                        <img src="./images/stack-logos/sqlalchemy.png" class="thumbnail" alt="sqlalchemy">
+                        <img src="./images/stack-logos/auth0.png" class="thumbnail" alt="auth0">
+                    </div>
+                </div>
+                <!-- Cashier Game -->
+                <div class="grid-item">
+                    <div class="header">
+                        <a href="https://cashiergame.onrender.com/" target="_blank">Cashier Game</a>
+                    </div>
+                    <p class="project-description">
+                        A cashier simulation where you have to punch in the order within 30 seconds to get a tip based on
+                        accuracy.
+                    </p>
+                    <hr>
+                    <div id="img-container">
+                        <img src="./images/Game Screenshot.png" alt="screenshot">
+                    </div>
+                    <div class="stack">
+                        <img src="./images/stack-logos/Python-logo.png" class="thumbnail" alt="python">
+                        <img src="./images/stack-logos/flask.png" class="thumbnail" alt="flask">
+                        <img src="./images/stack-logos/React-icon.png" class="thumbnail" alt="react">
+                    </div>
+                </div>
+                <!-- Inventory App -->
+                <div class="grid-item">
+                    <div class="header">
+                        <a href="https://team-2-inventory-app.onrender.com/" target="_blank">Inventory App - Group
+                            Project</a>
+                    </div>
+                    <p class="project-description">
+                        A Fullstack RESTful CRUD application that keeps track of items.
+                    </p>
+                    <hr>
+                    <div id="img-container">
+                        <img src="./images/inventoryApp.png" alt="Inventory App Screenshot">
+                    </div>
+                    <div class="stack">
+                        <img src="./images/stack-logos/JavaScript-logo.png" class="thumbnail" alt="JavaScript">
+                        <img src="./images/stack-logos/React-icon.png" class="thumbnail" alt="react">
+                        <img src="./images/stack-logos/sequelize-icon.png" class="thumbnail" alt="sequelize">
+                        <img src="./images/stack-logos/Expressjs.png" class="thumbnail" alt="express">
+                    </div>
+                </div>
+                <!-- Art Portfolio -->
+                <div class="grid-item">
+                    <div class="header">
+                        <a href="https://tanxtdr.com/" target="_blank">My Art Portfolio</a>
+                    </div>
+                    <p class="project-description">
+                        The very first coding project to display my art.
+                    </p>
+                    <hr>
+                    <div id="img-container">
+                        <img src="./images/PortfolioScreenshot.png" alt="art portfolio">
+                    </div>
+                    <div class="stack">
+                        <img src="./images/stack-logos/html.png" class="thumbnail" alt="HTML">
+                        <img src="./images/stack-logos/css.png" class="thumbnail" alt="CSS">
+                        <img src="./images/stack-logos/bootstrap.png" class="thumbnail" alt="bootstrap">
+                    </div>
+                </div>
+ 
+            </div>
+        </div><br>
+
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
